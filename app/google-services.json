@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "772511722711",
+    "project_id": "examen-7aa4a",
+    "storage_bucket": "examen-7aa4a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:772511722711:android:801ba453b09c7887a61492",
+        "android_client_info": {
+          "package_name": "com.devnight.pruebafirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "772511722711-q8tdlk0uui5470rs6aftvs7u3jmprvkk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.devnight.pruebafirebase",
+            "certificate_hash": "6e6ce1b6de4b92528c872c445624d679bbeeb9b0"
+          }
+        },
+        {
+          "client_id": "772511722711-q89ga1mqh3ln3lsd4snoctgq13l1n4cu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXuJKl61SV6lHF9Jx7sOvMDBNI93cLoz4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "772511722711-q89ga1mqh3ln3lsd4snoctgq13l1n4cu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
