@@ -1,6 +1,7 @@
 package com.devnight.pruebafirebase.domain.model
 
 import com.devnight.pruebafirebase.data.Recomendation
+import com.devnight.pruebafirebase.data.database.entity.Recomendations
 
 data class RecomendationModel(
                               val adult: Boolean,
@@ -20,3 +21,5 @@ data class RecomendationModel(
 
 
 fun Recomendation.toDomain() = RecomendationModel(adult ,backdropPath, genreIds, id, originalLanguage, originalTitle, overview, popularity, posterPath, releaseDate, title, video, voteAverage, voteCount)
+fun Recomendations.toDomain() = RecomendationModel(adult ,backdropPath, genreIds, id, originalLanguage, originalTitle, overview, popularity, posterPath, releaseDate, title, video, voteAverage, voteCount)
+

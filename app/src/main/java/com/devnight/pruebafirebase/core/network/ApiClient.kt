@@ -1,9 +1,8 @@
-package com.devnight.pruebafirebase.domain.network
+package com.devnight.pruebafirebase.core.network
 
 import com.devnight.pruebafirebase.data.RecomendationMovie
 import retrofit2.Response
 import retrofit2.http.GET
-import retrofit2.http.Query
 
 interface ApiClient {
 

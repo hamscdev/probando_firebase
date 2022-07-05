@@ -3,36 +3,54 @@ package com.devnight.pruebafirebase.data.database.entity
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
+import com.devnight.pruebafirebase.domain.model.RecomendationModel
 
 
 @Entity(tableName = "tbl_discover")
 data class Recomendations(
-    @ColumnInfo("adult")
+    @ColumnInfo(name = "adult")
     val adult: Boolean,
-    @ColumnInfo("backdrop_path")
+    @ColumnInfo(name = "backdrop_path")
     val backdropPath: Any,
-    @ColumnInfo("genre_ids")
+    @ColumnInfo(name = "genre_ids")
     val genreIds: List<Int>,
     @PrimaryKey
     val id: Int,
-    @ColumnInfo("original_language")
+    @ColumnInfo(name = "original_language")
     val originalLanguage: String,
-    @ColumnInfo("original_title")
+    @ColumnInfo(name = "original_title")
     val originalTitle: String,
-    @ColumnInfo("overview")
+    @ColumnInfo(name = "overview")
     val overview: String,
-    @ColumnInfo("popularity")
+    @ColumnInfo(name = "popularity")
     val popularity: Double,
-    @ColumnInfo("poster_path")
+    @ColumnInfo(name = "poster_path")
     val posterPath: Any,
-    @ColumnInfo("release_date")
+    @ColumnInfo(name = "release_date")
     val releaseDate: String,
-    @ColumnInfo("title")
+    @ColumnInfo(name = "title")
     val title: String,
-    @ColumnInfo("video")
+    @ColumnInfo(name = "video")
     val video: Boolean,
-    @ColumnInfo("vote_average")
+    @ColumnInfo(name = "vote_average")
     val voteAverage: Double,
-    @ColumnInfo("vote_count")
+    @ColumnInfo(name = "vote_count")
     val voteCount: Int
 )
+
+
+
+fun RecomendationModel.toDatabase() = Recomendations(adult= adult,
+    backdropPath =  backdropPath,
+    genreIds = genreIds,
+    id = id,
+    originalLanguage = originalLanguage,
+    originalTitle = originalTitle,
+    overview =  overview,
+    popularity = popularity,
+    posterPath = posterPath,
+    releaseDate = releaseDate,
+    title = title,
+    video = video,
+    voteAverage =  voteAverage,
+    voteCount = voteCount)
