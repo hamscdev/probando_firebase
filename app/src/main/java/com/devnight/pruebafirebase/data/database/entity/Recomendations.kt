@@ -11,9 +11,9 @@ data class Recomendations(
     @ColumnInfo(name = "adult")
     val adult: Boolean,
     @ColumnInfo(name = "backdrop_path")
-    val backdropPath: Any,
+    val backdropPath: String,
     @ColumnInfo(name = "genre_ids")
-    val genreIds: List<Int>,
+    val genreIds: String,
     @PrimaryKey
     val id: Int,
     @ColumnInfo(name = "original_language")
@@ -25,7 +25,7 @@ data class Recomendations(
     @ColumnInfo(name = "popularity")
     val popularity: Double,
     @ColumnInfo(name = "poster_path")
-    val posterPath: Any,
+    val posterPath: String,
     @ColumnInfo(name = "release_date")
     val releaseDate: String,
     @ColumnInfo(name = "title")

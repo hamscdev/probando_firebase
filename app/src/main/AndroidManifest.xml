@@ -12,12 +12,13 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:name=".MvvmApp"
+        android:usesCleartextTraffic="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Pruebafirebase"
         tools:targetApi="31">
         <activity
-            android:name="com.devnight.pruebafirebase.ui.view.MainActivity"
+            android:name=".ui.view.Ma1inActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

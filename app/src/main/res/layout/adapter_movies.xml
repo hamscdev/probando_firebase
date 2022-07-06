@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/title_movie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Titulo de la pelicula"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/description_movie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:fontFamily="@font/montserrat"
+            android:text="Descripcion de la pelicula"
+            android:textSize="16sp" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/release_date"
+                android:text="Fecha de estreno"
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                android:layout_weight=".4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+            <RatingBar
+                android:id="@+id/rating_bar"
+                android:max="5"
+                android:numStars="5"
+                android:stepSize="1"
+                android:progressTint="@color/yellow_rating"
+                android:secondaryProgressTint="@color/yellow_rating"
+                android:layout_weight=".6"
+                android:isIndicator="true"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

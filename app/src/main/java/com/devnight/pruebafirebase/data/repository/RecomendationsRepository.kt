@@ -11,8 +11,8 @@ class RecomendationsRepository @Inject constructor(
     private val api: ApiClient, private val dao: RecomendationDao ) {
 
 
-    suspend fun  getRecomendarionsFromApi(): List<RecomendationModel>{
-        val response = api.getRecomendations().body()?.results
+    suspend fun  getRecomendarionsFromApi(resources: String): List<RecomendationModel>{
+        val response = api.getRecomendations(resources).body()?.results
                     return response?.map { it.toDomain() } ?: emptyList()
     }
     suspend fun getRecomendationsFromDatabase():List<RecomendationModel> =
