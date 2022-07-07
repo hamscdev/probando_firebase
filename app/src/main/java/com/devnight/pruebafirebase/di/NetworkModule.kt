@@ -1,6 +1,7 @@
 package com.devnight.pruebafirebase.di
 
 import com.devnight.pruebafirebase.core.network.ApiClient
+import com.google.firebase.ktx.Firebase
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -26,5 +27,11 @@ object NetworkModule {
     fun provideApiClient(retrofit: Retrofit): ApiClient {
         return retrofit.create(ApiClient::class.java)
     }
+
+
+
+
+
+
 
 }

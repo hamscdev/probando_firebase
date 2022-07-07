@@ -15,15 +15,12 @@ class RecomendationsRepository @Inject constructor(
         val response = api.getRecomendations(resources).body()?.results
                     return response?.map { it.toDomain() } ?: emptyList()
     }
-    suspend fun getRecomendationsFromDatabase():List<RecomendationModel> =
-        dao.getAllRecomendations().map { it.toDomain() }
+    suspend fun getRecomendationsFromDatabase():List<RecomendationModel> = dao.getAllRecomendations().map { it.toDomain() }
 
-    suspend fun insertRecommendation(listRec: List<Recomendations>) {
-       dao.insertAll(listRec)
-    }
-    suspend fun clearRecomendations(){
-        dao.deleteAllRecomendations()
-    }
+    suspend fun insertRecommendation(listRec: List<Recomendations>) = dao.insertAll(listRec)
+
+    suspend fun clearRecomendations() = dao.deleteAllRecomendations()
+
 
 
 

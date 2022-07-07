@@ -1,18 +1,15 @@
 package com.devnight.pruebafirebase.ui.view
 
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.viewModels
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.viewbinding.ViewBinding
-import com.devnight.pruebafirebase.R
+import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.devnight.pruebafirebase.core.adapters.MoviesAdapter
 import com.devnight.pruebafirebase.databinding.ActivityMainBinding
 import com.devnight.pruebafirebase.ui.viewmodel.ViewMainModel
 import dagger.hilt.android.AndroidEntryPoint
-
-import javax.inject.Inject
 
 @AndroidEntryPoint
 class Ma1inActivity: AppCompatActivity() {
@@ -28,6 +25,7 @@ class Ma1inActivity: AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        supportActionBar?.hide()
 
 
         viewModel.onCreate()
@@ -37,6 +35,11 @@ class Ma1inActivity: AppCompatActivity() {
         })
 
 
+
+        binding.buttonMaps.setOnClickListener {
+            val intent = Intent(this, Navigation::class.java)
+            startActivity(intent)
+        }
 
 
 

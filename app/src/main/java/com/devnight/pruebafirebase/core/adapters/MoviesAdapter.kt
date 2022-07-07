@@ -22,13 +22,10 @@ class MoviesAdapter(val moviesList: List<RecomendationModel>, val context: Conte
 
 
         fun render(it: RecomendationModel, context: Context){
-
             title.setText(it.title)
             description.setText(it.overview)
             date.setText(it.releaseDate)
-            Log.e("average", it.voteAverage.toString())
             rating.rating = (it.voteAverage.toFloat() * 5)/10
-
         }
 
 

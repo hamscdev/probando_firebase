@@ -4,7 +4,10 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/hecto/OneDrive/Documentos/Proyectos/probando_firebase/app/src/main/res/layout/activity_main.xml" value="0.1859375" />
+        <entry key="..\:/Users/hecto/OneDrive/Documentos/Proyectos/probando_firebase/app/src/main/res/layout/activity_maps.xml" value="0.1" />
         <entry key="..\:/Users/hecto/OneDrive/Documentos/Proyectos/probando_firebase/app/src/main/res/layout/adapter_movies.xml" value="0.18489583333333334" />
+        <entry key="..\:/Users/hecto/OneDrive/Documentos/Proyectos/probando_firebase/app/src/main/res/layout/content_navigation.xml" value="0.1" />
+        <entry key="..\:/Users/hecto/OneDrive/Documentos/Proyectos/probando_firebase/app/src/main/res/layout/fragment_gallery.xml" value="0.1" />
       </map>
     </option>
   </component>
