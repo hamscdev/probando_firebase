@@ -83,7 +83,7 @@ class GalleryFragment : Fragment(), OnMapReadyCallback {
         if(getPermissions()) {
 
             var locationRequest = LocationRequest()
-            locationRequest.interval = 90000
+            locationRequest.interval = 900000
             locationRequest.priority = LocationRequest.PRIORITY_HIGH_ACCURACY
 
             locationCallback = object: LocationCallback(){
